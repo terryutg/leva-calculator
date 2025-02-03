@@ -66,6 +66,10 @@
         .button.wide {
             grid-column: span 4; /* Кнопка = занимает всю строку */
         }
+        .equal-row {
+            grid-column: span 4; /* Разделение для кнопки = */
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -95,7 +99,7 @@
             <button class="button" onclick="appendToDisplay(':')">:</button>
         </div>
 
-        <div class="buttons">
+        <div class="equal-row">
             <button class="button wide" onclick="calculateResult()">=</button>
         </div>
     </div>
