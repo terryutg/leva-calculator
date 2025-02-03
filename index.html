@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор Лёвы Еблёвы</title>
+    <title>Калькулятор Терри</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -63,11 +63,14 @@
         .button.clear:hover {
             background-color: #e53935;
         }
+        .button.wide {
+            grid-column: span 4; /* Кнопка = занимает всю строку */
+        }
     </style>
 </head>
 <body>
     <div class="calculator">
-        <h1>Калькулятор Лёвы Еблёвы</h1>
+        <h1>Калькулятор Терри</h1>
         <input type="text" id="display" class="display" disabled>
 
         <div class="buttons">
@@ -93,7 +96,7 @@
         </div>
 
         <div class="buttons">
-            <button class="button" onclick="calculateResult()" style="grid-column: span 4;">=</button>
+            <button class="button wide" onclick="calculateResult()">=</button>
         </div>
     </div>
 
